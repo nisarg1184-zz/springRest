@@ -6,6 +6,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.Arrays;
+import java.util.List;
+
 @Component
 public class PersonClient {
     private static final String PERSON_API_URL = "http://localhost:8080/api/v1/person/";
@@ -18,5 +21,9 @@ public class PersonClient {
 
     public ResponseEntity<Person[]> fetchPeople() {
         return this.restTemplate.getForEntity(PERSON_API_URL, Person[].class);
+    }
+
+    public List<Person> getPersonList() {
+        return Arrays.asList(fetchPeople().getBody());
     }
 }
