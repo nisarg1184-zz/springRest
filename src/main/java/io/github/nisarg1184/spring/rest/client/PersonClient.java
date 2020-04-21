@@ -1,13 +1,12 @@
-package com.nisarg.client;
+package io.github.nisarg1184.spring.rest.client;
 
-import com.nisarg.model.Person;
+import io.github.nisarg1184.spring.rest.model.Person;
+import java.util.Arrays;
+import java.util.List;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-
-import java.util.Arrays;
-import java.util.List;
 
 @Component
 public class PersonClient {

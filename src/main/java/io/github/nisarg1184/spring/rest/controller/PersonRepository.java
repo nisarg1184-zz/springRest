@@ -1,6 +1,6 @@
-package com.nisarg.controller;
+package io.github.nisarg1184.spring.rest.controller;
 
-import com.nisarg.model.Person;
+import io.github.nisarg1184.spring.rest.model.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

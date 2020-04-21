@@ -1,4 +1,4 @@
-package com.nisarg;
+package io.github.nisarg1184.spring.rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

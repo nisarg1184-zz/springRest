@@ -1,7 +1,7 @@
-package com.nisarg.actuator;
+package io.github.nisarg1184.spring.rest.actuator;
 
-import com.nisarg.client.PersonClient;
-import com.nisarg.model.Person;
+import io.github.nisarg1184.spring.rest.client.PersonClient;
+import io.github.nisarg1184.spring.rest.model.Person;
 import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.HealthIndicator;
 import org.springframework.http.ResponseEntity;

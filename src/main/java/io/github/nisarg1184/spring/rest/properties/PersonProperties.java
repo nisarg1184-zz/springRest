@@ -1,9 +1,8 @@
-package com.nisarg.properties;
-
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.validation.annotation.Validated;
+package io.github.nisarg1184.spring.rest.properties;
 
 import javax.validation.constraints.Pattern;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.validation.annotation.Validated;
 
 @ConfigurationProperties("person")
 @Validated

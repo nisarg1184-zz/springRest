@@ -1,4 +1,4 @@
-package com.nisarg.security;
+package io.github.nisarg1184.spring.rest.security;
 
 import org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;

@@ -1,4 +1,4 @@
-package com.nisarg.controller;
+package io.github.nisarg1184.spring.rest.controller;
 
 import org.springframework.web.bind.annotation.ResponseStatus;
 

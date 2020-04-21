@@ -1,4 +1,4 @@
-package com.nisarg.model;
+package io.github.nisarg1184.spring.rest.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
