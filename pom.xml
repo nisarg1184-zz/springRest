@@ -33,21 +33,21 @@
     <scm>
         <connection>scm:git:git@github.com:nisarg1184/springRest.git</connection>
         <developerConnection>scm:git:git@github.com:nisarg1184/springRest.git</developerConnection>
-        <url>https://github.com/AuDigitalHealth/springRest</url>
+        <url>git@github.com:nisarg1184/springRest.git</url>
         <tag>springRest-1.0</tag>
     </scm>
 
     <distributionManagement>
         <snapshotRepository>
-            <id>ossrh</id>
+            <id>nexus-releases</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>nexus-releases</id>
+            <!--<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>-->
+            <url>https://oss.sonatype.org/content/groups/staging</url>
         </repository>
     </distributionManagement>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -217,7 +217,7 @@
                 <version>1.6.8</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <serverId>ossrh</serverId>
+                    <serverId>nexus-releases</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>false</autoReleaseAfterClose>
                 </configuration>
