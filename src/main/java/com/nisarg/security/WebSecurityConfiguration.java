@@ -15,25 +15,25 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth)
             throws Exception {
         auth
-                .inMemoryAuthentication()
-                .withUser("user")
-                .password("password")
-                .roles("USER", "ACTUATOR")
-                .and()
-                .withUser("admin")
-                .password("admin")
-                .roles("USER", "ADMIN", "ACTUATOR");
+            .inMemoryAuthentication()
+            .withUser("user")
+            .password("{noop}password")
+            .roles("USER", "ACTUATOR")
+            .and()
+            .withUser("admin")
+            .password("{noop}admin")
+            .roles("USER", "ADMIN", "ACTUATOR");
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .requestMatchers(EndpointRequest.to("info", "status")).permitAll()
-                .requestMatchers(EndpointRequest.toAnyEndpoint()).hasRole("ACTUATOR")
-                .requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
-                .antMatchers("/admin").hasRole("ADMIN")
-                .antMatchers("/**").permitAll()
-                .and().httpBasic();
+            .requestMatchers(EndpointRequest.to("info", "status")).permitAll()
+            .requestMatchers(EndpointRequest.toAnyEndpoint()).hasRole("ACTUATOR")
+            .requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
+            .antMatchers("/admin").hasRole("ADMIN")
+            .antMatchers("/**").permitAll()
+            .and().httpBasic();
     }
 
 
