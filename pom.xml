@@ -280,7 +280,10 @@
                 <configuration>
                     <branchName>master</branchName>
                     <localCheckout>true</localCheckout>
+                    <useReleaseProfile>false</useReleaseProfile>
+                    <releaseProfiles>release</releaseProfiles>
                     <dryRun>false</dryRun>
+                    <goals>deploy</goals>
                 </configuration>
             </plugin>
         </plugins>
