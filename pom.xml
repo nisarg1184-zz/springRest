@@ -4,7 +4,7 @@
 
     <groupId>io.github.nisarg1184</groupId>
     <artifactId>springRest</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <parent>
@@ -34,7 +34,7 @@
         <connection>scm:git:git@github.com:nisarg1184/springRest.git</connection>
         <developerConnection>scm:git:git@github.com:nisarg1184/springRest.git</developerConnection>
         <url>git@github.com:nisarg1184/springRest.git</url>
-        <tag>springRest-1.0</tag>
+        <tag>springRest-1.1</tag>
     </scm>
 
     <distributionManagement>
